@@ -1,0 +1,163 @@
+	<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>COZY INTERIOR Design</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"  />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/41d7b6632a.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+	<body>
+		<!-- 건너뛰기 링크 - 웹접근성 -->
+		<a id="skipNav" href="#contents">본문 바로가기</a>
+		<!-- 건너뛰기 링크 종료 -->
+		<div id="wrapper">
+	<!-- 모달 시작 -->
+			 <div class="modal">
+				<div class="modal_closebtn">
+					C L O S E &nbsp;<i class="fas fa-times"></i>
+				</div>
+				<div class="modal_top">
+					<div class="modal_logo">
+						<a href="index.html"><img src="images/LOGO.png" /></a>
+					</div>
+				</div>
+				<div class="modal_popup">
+					<ul class="modal_menu">
+						<li class="modal_main_menu">
+							<a href="#" class="modal_main_menu_btn">COMPANY + </a>
+							<ul class="hide">
+								<li><a href="company.html#at1">About COZY</a></li>
+								<li><a href="company.html#at2">MAP</a></li>
+							</ul>
+						</li>
+						<li class="modal_main_menu">
+							<a href="portfolio.html" class="modal_main_menu_btn">PORTPOLIO</a>
+						</li>
+						<li class="modal_main_menu">
+							<a href="#" class="modal_main_menu_btn">REQUESTION + </a>
+							<ul class="hide">
+								<li><a href="requestion.html">견적신청하기</a></li>
+							</ul>
+						</li>
+						<li class="modal_main_menu">
+							<a href="#" class="modal_main_menu_btn">CONTACT + </a>
+							<ul class="hide">
+								<li><a href="board.html">공지사항 / FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div> 
+	<!-- 모달 끝 -->
+	<!-- 	헤더영역 시작	 -->
+			<header id="header">
+				<ul class="info">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+				</ul>
+				<nav class="nav_bar">
+					<div class="nav_logo">
+						<a href="index.html"><img src="images/LOGO.png" /></a>
+					</div>
+					<ul class="nav_menu">
+						<li class="top_menu">
+							<a href="company.html" class="top_menu_btn">COMPANY</a>
+							<ul class="sub_menu">
+								<li><a href="company.html#at1">About COZY</a></li>
+								<li><a href="company.html#at2">MAP</a></li>
+							</ul>
+						</li>
+						<li class="top_menu">
+							<a href="portfolio.html" class="top_menu_btn">PORTPOLIO</a>
+						</li>
+						<li class="top_menu">
+							<a href="requestion.html" class="top_menu_btn">REQUESTION</a>
+							<ul class="sub_menu">
+								<li><a href="requestion.html">견적신청하기</a></li>
+							</ul>
+						</li>
+						<li class="top_menu">
+							<a href="board.html" class="top_menu_btn">CONTACT</a>
+							<ul class="sub_menu">
+								<li><a href="board.html">공지사항 / FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="button">
+						<a href="#" class="nav_modal_btn">
+							M E N U &nbsp;<i class="fas fa-bars"></i>
+						</a>
+					</div>
+				</nav>
+			</header>
+	<!-- 헤더영역 끝 -->
+	
+	<!-- 콘텐츠 영역 시작-->
+			<div id="contents">
+				<h1>Log In</h1>
+				<form class="login_form">
+					<label for="username"><b>아이디</b></label>
+					<input type="text" id="username" placeholder="아이디 입력" required>
+					<label for="userpassword"><b>패스워드</b></label>
+					<input type="password" id="userpassword" placeholder="비밀번호 입력" required>
+					<button type="submit" class="go_login">로그인</button>
+				</from>
+				<div class="login_choice">
+					<label class="choice">자동 로그인 하기
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label> &nbsp;&nbsp; &nbsp;&nbsp;
+					<b>|</b>&nbsp;&nbsp; &nbsp;&nbsp;
+					<label class="choice">아이디 기억하기
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="go_join">
+					<a href="join.html" >회원가입 <i class="fas fa-arrow-right"></i></a>
+				</div>	
+			</div>
+	<!-- 콘텐츠 영역 끝-->
+
+	<!-- TOP버튼-->
+	<div class="top">
+		<p>Top</p>
+	</div>
+	<!-- 푸터시작 -->
+	<footer id="footer">
+		<div class="foot_logo">
+			<img src="images/LOGO_footer.png" alt="logo">
+		</div>
+		<div class="foot_address">
+			<section class="left_area">
+				<address>
+					<span>CEO : 홍길동 | 사업자등록번호 : 123-45-67891 </span><br/>
+					<span>주소: 경기도 성남시 분당구 미금로 1234</span><span>T. 031-700-0000 | F. 031-712-1234 </span><br/>
+					<span>E-MAIL: <a href="mailto:cozy123@cozy.com">cozy123@cozy.com</a></span>
+				</address>
+			</section>
+			<section class="right_area">
+				<div class="customer">
+					<h3>| 고객센터</h3>
+					<p>운영시간 : 09:00 ~ 17:30</p>
+					<p>TEL : 031-712-2580</p>
+				</div>
+				<div class="sns">
+					<h3>| 공식 SNS 바로가기</h3>
+					<a href="#"><img src="images/blog.png" alt="blog" /></a>
+					<a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+					<a href="#"><img src="images/insta.png" alt="instargram" /></a>
+					<a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+				</div>
+			</section>
+		</div>
+		<p class="copyright">Copyright since &copy; 2010 by COZY CORPORATION ALL RIGHTS RESERVED.</p>
+	</footer>
+	<!-- 푸터끝-->
+		</div>
+	</body>
+</html>

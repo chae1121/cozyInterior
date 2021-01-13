@@ -1,0 +1,211 @@
+/* 전체 공통 초기화 */
+@charset "utf-8";
+@import url(nomal.css);
+
+#contents{
+	width: 80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.nav_menu>li>a{
+	color: #121212;
+}
+
+/* 헤더영역 */
+
+
+/* 비주얼영역 */
+#visual{
+	position: relative;
+	width: 100%; height: 700px;
+	background: url(../images/visual.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#visual>h1{
+	position: absolute;
+	top: 30%; left: 10%;
+	font-size: 3rem;
+	color: #121212;
+	-webkit-animation:droph1 1.5s;
+	animation: droph1 1.5s;
+}
+.mobile_show{
+	display: none;
+	width: 100%;
+}
+@-webkit-keyframes droph1{
+	0%{
+		top:0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	100%{
+		top:30%;
+		opacity: 1;
+	}
+}
+
+@keyframes droph1{
+	0%{
+		top:0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	100%{
+		top:30%;
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 863px){
+	.info>li>a{
+		font-size: 10px;
+	}
+	#visual>h1{
+		left: 40%;
+		font-size: 2rem;
+	}
+	#content_first>ul>li{
+		font-size: 11px;
+	}
+	.fadeInButtom{
+		flex-direction: column;
+	}
+	.fadeInButtom>li{
+		width: 100%;
+	}
+	article .fadeInButtom>li span{
+		font-size: 16px;
+	}
+	article .fadeInButtom>li{
+		margin-left: 0;
+	}
+	article .fadeInButtom>li:last-child{
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 530px){
+	#visual{
+		background: none;
+	}
+	.mobile_show{
+		display: block;
+	}
+	
+}
+
+/* 콘텐츠영역 */
+
+article{
+	width: 100%;	
+	overflow: hidden;
+}
+#content_first>ul{
+	display: flex;
+	border-bottom: 1px solid #5D5D5D;
+}
+#content_first>ul>li{
+	padding: 5px 20px;
+	border: 1px solid #5D5D5D;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #121212;
+	font-weight: bold;
+	font-size: 1rem;
+	border-bottom: 0;
+	cursor: pointer;
+}
+.at_box{
+	display: none;
+}
+
+.fadeInButtom{
+	opacity: 0;
+	margin-bottom:-300px;
+	width: 100%;
+	display: flex;
+	height: 100%;
+	padding-top: 50px;
+	/* box-sizing: border-box;*/
+}
+.fadeInButtom>li{
+	flex:1;
+	margin: 30px;
+	margin-right: 0;
+	text-align: center;
+	border: 1px solid;
+	cursor: pointer;
+	box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+}
+article>ul>li>img{
+	width: 100%;
+}
+.fadeInButtom>li span{
+	font-size: 1.2rem;
+}
+.fadeInButtom>li:last-child{
+	margin-right: 30px;
+}
+/* 상세 모달 */
+.modal_con{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9;
+	padding-top: 3%;
+	top: 0; left: 0;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	display: none;
+	margin: auto;
+	overflow: auto;
+	
+}
+.modal_text{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	background-color: #212121;
+	margin-bottom: 2%;
+	padding-bottom: 3%;
+}
+.modal_text>b,p{
+	padding: 0 5%;
+	font-size: 1rem;
+}
+.modal_text>p{
+	font-size: 0.9rem;
+	text-align: left;
+}
+.modal_detail_close{
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	top: 0; right: 2%;
+	cursor: pointer;
+	color: #fff;
+	z-index: 99;
+}
+.modal_text>img{
+	width: 100%;
+	box-shadow: none;
+}
+.detail_title{
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: lemonchiffon;
+}
+/* 콘텐츠 영역 끝 */
+
+/* top버튼 */
+.top>p{
+	text-align: center;
+}
+
+

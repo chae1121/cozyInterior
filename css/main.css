@@ -1,0 +1,258 @@
+/* 전체 공통 초기화 */
+@charset "UTF-8";
+@import url(nomal.css);
+
+
+/* 모바일크기 -반응형 */
+@media screen and (max-width:863px){
+	.visual_text>p{
+		display: none;
+	}
+	.homebox, .commerbox{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.homebox>div, .commerbox>div{
+		padding-top: 10%;
+	}
+	.info>li>a{
+		font-size: 10px;
+	}
+}
+/* 모달 끝 */
+/* 전체영역 크기 설정 */
+.con_home, .con_commercial{
+	width:100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+/* 헤더영역 시작 */
+
+
+/* 헤더영역 끝 */
+
+/* 비주얼 슬라이드 영역 시작 */
+#visual{
+	box-sizing: border-box;
+	position: relative;
+	top:-91px;
+	z-index: -1;
+	margin: 0 auto;
+}
+.image_slide{
+	width: 100%;
+}
+.image_slide img{
+	width: 100%;
+}
+
+/* 도트 상태바 */
+.dot_bar{
+	text-align: center;
+	position: relative;
+	top:-130px;
+}
+.dot{
+	width: 5%;
+	height: 3px;
+	background-color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	/* border-radius: 50%; */
+	transition: 0.6s;
+
+}
+.dot:hover{
+	background-color: #212121;
+}
+
+.active {
+	background-color: #212121;
+  }
+
+  /* 비주얼 텍스트 */
+.visual_text{
+	position: relative;
+	top: -170px;
+}
+.visual_text>p{
+	position: absolute;
+	color: #fff;
+	font-size: 0.3rem;
+	right: 0;
+}
+/* 비주얼 슬라이드 영역 끝 */
+
+/* 콘텐츠영역 시작 */
+#contents{
+	width: 100%;
+}
+#contents>h1{
+	font-size: 2rem;
+}
+#contents h1,h2,p{
+	text-align: center;
+}
+.con_home{
+	margin-top: 100px;
+}
+.con_home>h2{
+	font-size: 1.3rem;
+}
+.con_home>p{
+	font-size: 3rem;
+	color: #5D5D5D;
+	padding-top: 2.5%;
+}
+.homebox{
+	display: flex;
+	width: 100%;
+	margin-top: 60px;
+}
+.homeimg{
+	flex: 1;
+	padding: 5% 2%;
+}
+.homeimg:first-child{
+	padding-left: 3%;
+}
+.homeimg:last-child{
+	padding-right: 3%;
+}
+.homebox img{
+	width: 100%;
+	transition: 0.4s;
+	box-shadow: 5px 5px 10px 5px rgba(139,135,130,0.2), -5px -5px 10px 5px  rgba(139,135,130,0.2);
+}
+.homeimg p{
+	font-size: 1rem;
+}
+.homeimg p:nth-of-type(1){
+	width: 100%;
+	padding-top: 5%;
+	font-weight: bold;
+}
+.homeimg:hover img{
+	transform: translateY(-10px);
+	box-shadow: 5px 5px 10px 5px rgba(139,135,130,0.2), -5px -5px 10px 5px  rgba(139,135,130,0.2);
+}
+.con_commercial{
+	margin-top: 130px;
+}
+.con_commercial>h2{
+	font-size: 1.3rem;
+}
+.con_commercial>p{
+	font-size: 3rem;
+	color: #5D5D5D;
+	padding-top: 2.5%;
+}
+.commerbox{
+	display: flex;
+	width: 100%;
+	margin-top: 60px;
+}
+.commerimg{
+	flex: 1;
+	padding: 5% 2%;
+}
+.commerimg p{
+	font-size: 1rem;
+}
+.commerimg>p:nth-of-type(1){
+	width: 100%;
+	padding-top: 5%;
+	font-weight: bold;
+}
+.commerimg:first-child{
+	padding-left: 3%;
+}
+.commerimg:last-child{
+	padding-right: 3%;
+}
+.commerbox img{
+	width: 100%;
+	transition: 0.4s;
+	box-shadow: 5px 5px 10px 5px rgba(139,135,130,0.2), -5px -5px 10px 5px  rgba(139,135,130,0.2);
+}
+.commerimg:hover img{
+	transform: translateY(-10px);
+	box-shadow: 5px 5px 10px 5px rgba(247, 243, 240, 0.2), -5px -5px 10px 5px  rgba(139,135,130,0.2);
+}
+.datail_show{
+	width: 100%;
+	background-color: #212121;
+	color: #fff;
+	padding: 2% 0;
+	margin-top: 3%;
+	transition: 0.5s;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.datail_show:hover {
+	cursor: pointer;
+	background-color: grey;
+}
+.homeimg, .commerimg{
+	cursor: pointer;
+}
+/* 상세 모달 */
+.modal_con{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9;
+	padding-top: 3%;
+	top: 0; left: 0;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	display: none;
+	margin: auto;
+	overflow: auto;
+	
+}
+.modal_text{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	background-color: #212121;
+	margin-bottom: 2%;
+	padding-bottom: 3%;
+	
+}
+.modal_text>b,p{
+	padding: 0 5%;
+	font-size: 1.1rem;
+}
+.modal_text>p{
+	font-size: 0.9rem;
+	text-align: left;
+}
+.modal_detail_close{
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	top: 0; right: 2%;
+	cursor: pointer;
+	color: #fff;
+	z-index: 99;
+}
+
+.modal_text>img{
+	width: 100%;
+	box-shadow: none;
+}
+.detail_title{
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: lemonchiffon;
+}
+
+/* 콘텐츠 영역 끝 */
+
+/* 푸터 */
+#footer{
+	margin-top: 20%;
+}
+

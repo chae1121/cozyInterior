@@ -1,0 +1,187 @@
+/* 전체 공통 초기화 */
+@charset "UTF-8";
+@import url(nomal.css);
+
+/* 헤더영역 */
+.nav_bar>.nav_menu>li>a{
+    color: #121212;
+}
+
+/* 비주얼영역 */
+#visual{
+	position: relative;
+	width: 100%; height: 700px;
+	background: url(../images/inside-weather-Uxqlfigh6oE-unsplash.jpg) no-repeat center center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+#visual>h1{
+	position: absolute;
+	top: 30%; left: 10%;
+	font-size: 3rem;
+	color: #121212;
+	-webkit-animation:droph1 1.5s;
+	animation: droph1 1.5s;
+}
+.mobile_show{
+	display: none;
+	width: 100%;
+}
+@-webkit-keyframes droph1{
+	0%{
+		top:0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	100%{
+		top:30%;
+		opacity: 1;
+	}
+}
+
+@keyframes droph1{
+	0%{
+		top:0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	100%{
+		top:30%;
+		opacity: 1;
+	}
+}
+
+/* 반응형 최적화 */
+@media screen and (max-width: 863px){
+	.info>li>a{
+		font-size: 10px;
+	}
+	#visual>h1{
+		left: 30%;
+		font-size: 2rem;
+	}
+	#content_first>ul>li{
+		font-size: 11px;
+	}
+	.at1_process>img{
+		display: none;
+	}
+	.at1_process_text{
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 530px){
+	#visual{
+		background: none;
+	}
+	.mobile_show{
+		display: block;
+	}
+}
+
+#contents{
+    width: 60%;
+	margin: 0 auto;
+	font-size: 0.9rem;
+}
+#contents>h1::after{
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 3px solid #BD8065;
+    margin: 20px auto;
+}
+#contents>p{
+    text-align: center;
+	margin-top: 30px;
+	font-size: 1rem;
+}
+::placeholder{
+	font-size: 0.7rem;
+}
+.content_req{
+    width: 100%;
+}
+.content_req>table{
+    margin: auto;
+}
+label{
+	font-size: 0.9rem;
+}
+.text{
+    display: block;
+    width: 100%;
+    height: 40px;
+	line-height: 30px;
+	font-size: 1rem;
+}
+.money_text{
+	width: 80%;
+}
+input[type="text"], select, #date{
+	height: 40px;
+	font-size: 1rem;
+}
+.phone_text{
+	width: 25%;
+}
+.phone_text1{
+	width: 26%;
+}
+.strong{
+	color: red;
+	font-weight: bold;
+}
+.qna{
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+.submit_btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+.area{
+	width: 100px;
+}
+
+.at1_process{
+	margin-top: 20%;
+}
+.at1_process>hr{
+	width: 5%;
+	margin: 0 auto;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+.at1_process>h1{
+	font-size: 1.7rem;
+}
+.at1_process_text{
+	margin-top: 10%;
+}
+.at1_process_text>li{
+	padding: 8px 12px;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.at1_process_text>li>i{
+	font-size: 1.1rem;
+}
+.at1_process>img{
+	width: 100%;
+	margin-top: 7%;
+}
